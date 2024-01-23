@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+}
+.slidercontainer{
+    width: 700px;
+    height: 500px;
+    overflow: hidden;/*digerlerinin gözukmemesini saglıyor*/
+    border-radius: 20px;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.imgcontainer{
+transform: translate(-700px);/*bir sonrakine gecer x ekseni uzerinde*/
+display: flex;/*icindekileri kaldırır*/
+}
+body{
+    height: 100vh;/*tum tarayıcı boyutu kadar*/
+    display: flex;
+    justify-content: center;/*yatay olarak ortalama*/
+    align-items: center;/*dikey olarak ortalama*/
+    margin: 0;
+}
+.icon{
+    position: absolute;/*kapsadıgı dive göre hizlama islemi yapar*/
+    color: white;
+    top: 50%;/*yukardan uzaklık*/
+    transform: translateY(-50%);/*tam ortada olması icin y eksenine göre */
+    cursor: pointer;
+    font-size: 25px;
+
+}
+.prev{
+    left: 10px;
+}
+.next{
+    right: 10px;
+}
+.icon:hover{
+    color: yellow;
+}
+
+
